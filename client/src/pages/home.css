@@ -1,0 +1,509 @@
+
+/* ==============================================
+    1. HERO
+================================================= */
+
+/* ==============================================
+    1. Left Section
+================================================= */
+
+section.hero {
+    margin-top: 3rem;
+}
+
+section.hero .left-section {
+    flex-grow: 1;
+}
+
+.parent-avatar {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.6rem;
+}
+
+
+section.hero .avatar {
+    width: 80px;
+}
+
+
+
+section.hero h1.title {
+    font-size: 2.85rem;
+    line-height: 3.7rem;
+    margin: 24px 0;
+}
+
+
+section.hero h1.title span {
+    color: var(--blue);
+}
+
+section.hero p.sub-title{
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    margin-bottom: 33px;
+}
+
+
+.subtitle-h2 {
+    font-size:35px;
+    text-align: center;
+    
+}
+
+
+
+/* ==============================================
+    1. Right Section
+================================================= */
+
+.animation {
+    width: 100%;
+    translate: 50px 40px;
+}
+
+/* .right-section .developper-animation {
+    width: 100%;
+} */
+
+@media (max-width : 1100px) {
+    .right-section {
+        display: none;
+    }
+  }
+
+
+/*==========================================================
+    skills
+============================================================*/
+
+.skills_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.skills_head h2 span{
+    color: #e74d06;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--blue);
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 3s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 3s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 70%;
+    animation: sass 3s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .js{
+    width: 80%;
+    animation: css 3s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .react{
+    width: 75%;
+    animation: react 3s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .node{
+    width: 70%;
+    animation: node 3s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .express{
+    width: 65%;
+    animation: express 3s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .mongo{
+    width: 70%;
+    animation: mongo 3s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.skill_bar .bar .boots{
+    width: 80%;
+    animation: boots 3s;
+}
+@keyframes boots {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .next{
+    width: 35%;
+    animation: next 3s;
+}
+@keyframes next {
+    0%{
+        width: 0%;
+    }100%{
+        width: 35%;
+    }
+}
+
+.skill_bar .bar .jquery{
+    width: 60%;
+    animation: jquery 3s;
+}
+@keyframes jquery {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+.skill_bar .bar .laravel{
+    width: 60%;
+    animation: laravel 3s;
+}
+@keyframes laravel {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+.skill_bar .bar .php{
+    width:70%;
+    animation: php 3s;
+}
+@keyframes php {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .git{
+    width: 60%;
+    animation: git 3s;
+}
+@keyframes git {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+.skill_bar .bar .symfony{
+    width: 45%;
+    animation: symfony 3s;
+} 
+@keyframes symfony {
+    0%{
+        width: 0%;
+    }100%{
+        width: 45%;
+    }
+}
+.skill_bar .bar .sql{
+    width: 65%;
+    animation: sql 3s;
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+
+
+@media (max-width : 600px) {
+    .skills_main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 50px;
+    }
+  }
+
+
+
+  /*==========================================================
+    Service
+============================================================*/
+
+
+  .wrapper {
+    margin-top: 3rem;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card {
+    max-width: 350px; /* Utilisation de max-width au lieu de width pour permettre la réactivité */
+    width: 100%;
+    height: auto;
+    width: calc(60% - 10px);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  }
+  
+  .card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: auto;
+    height: 100%;
+    text-align: center;
+  }
+
+  .wrapper .card .card__content img {
+    max-width: 100%; /* Utilisation de max-width pour assurer la réactivité des images */
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.8rem;
+  }
+
+  
+
+  .wrapper .card .card__content p {
+    padding: 0 4px;
+    color: var(--subtitle);
+    margin-bottom: 1.2rem;
+  }
+
+
+
+  @media (max-width: 1000px) {
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+/*==========================================================
+    CONTACT
+============================================================*/
+
+
+.contact-us p {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--subtitle);
+}
+
+
+.form-container {
+    width: 530px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 130px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: var(--blue);
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  @media (max-width: 1000px) {
+    .form-container {
+        width: 530px;
+        margin-left: 0;
+      }
+    
+    section.contact-us .contact-animation{
+        display: none;
+    }
+}
